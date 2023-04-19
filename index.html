@@ -1,1 +1,89 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>lima-b</title>
+    <style>
+      body {
+        background-color: #1c1c1c;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+      
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      
+      .project-wrapper {
+        text-align: center;
+      }
+      
+      .project {
+        width: 200px;
+        height: 280px;
+        background-color: #333;
+        margin: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-family: Roboto;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .project1 {
+      }
+      
+      .project2 {
+      }
+      
+      .project3 {
+      }
+      
+      .project-icon {
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+      }
+      
+      .glow {
+        animation: pulse 0.5s infinite;
+      }
+      
+      @keyframes pulse {
+        0% {
+          background-color: #333;
+        }
+        50% {
+          background-color: #555;
+        }
+        100% {
+          background-color: #333;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>lima-b</h1>
+    <div class="project-wrapper">
+      <div class="project project1" onclick="window.open('https://github.com/l-bnp', '_blank')" onmouseover="this.classList.add('glow')" onmouseleave="this.classList.remove('glow')">
+        <div>audio-b</div>
+        <div><img src="icon-audio.svg" alt="Project 1 icon" class="project-icon"></div>
+      </div>
+      <div class="project project2" onclick="window.open('https://github.com/l-bnp', '_blank')" onmouseover="this.classList.add('glow')" onmouseleave="this.classList.remove('glow')">
+        <div>video-b</div>
+        <div><img src="icon-video.svg" alt="Project 2 icon" class="project-icon"></div>
+      </div>
+      <div class="project project3" onclick="window.open('https://github.com/l-bnp', '_blank')" onmouseover="this.classList.add('glow')" onmouseleave="this.classList.remove('glow')">
+        <div>misc-b</div>
+        <div><img src="icon-face.svg" alt="Project 3 icon" class="project-icon"></div>
+      </div>
+    </div>
+  </body>
+</html>
